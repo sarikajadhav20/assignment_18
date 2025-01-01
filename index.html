@@ -7,13 +7,15 @@
         .container{
             display:flex;
             flex-wrap:wrap;
+            justify-content:space-evenly;
         }
        .card1{
-        width:350px;
+        width:400px;
         height:420px;
         border:2px solid rgb(102, 102, 246);
         border-radius:10px;
         box-shadow:0 0 10px rgb(44, 43, 43);
+        margin:10px 20px;
        }
        .card1-img{
         width:100%;
@@ -39,9 +41,71 @@
         border:none;
         background-color: rgb(124, 124, 245);
        }
+       /* Mobile */
+       @media (max-width:600px) {
+            .card-name{
+                text-align: left;
+                padding-left:18px;
+                font-size:23px;
+                margin: 5px 0;
+            }
+            .card1{
+                width:400px;
+                height:400px;
+            }
+            .btn{
+                font-size:20px;
+                padding: 5px 30px;
+            }
+            .desc{
+                font-size:20px;
+                font-size:16px;
+            }
+            .menu{
+            display:none;
+        }
+        .menu-icon{
+             display:block;
+            margin-left:auto;
+            margin-right:50px;
+        }
+    }
+    /* Tablet */
+    @media (min-width:601px) and (max-width:800px) {
+        .card1{
+            width: 300px;
+            height: 410px;
+        }
+        .card-name{
+            font-size: 24px;
+        }
+        .desc{
+            font-size: 16px;
+        }
+        .btn{
+            font-size: 20px;
+            padding: 5px 30px;
+        }
+        .menu{
+            margin-left: 200px;
+        }
+        .Navbar{
+            background-color:palevioletred;
+        }
+        .menu{
+            display: flex;
+        }
+    }
+    /* Laptop */
+@media (min-width:801px) and (max-width:1200px) {
+   .menu{
+    margin-left: 400px;
+  }
+}
     </style>
 </head>
 <body>
+    <h1>Smartphones</h1>
     <div class="container">
 
         <div class="card1">
@@ -59,7 +123,7 @@
         <div class="card1">
             <img src="C:\Users\Sarikaj\Desktop\assignment_18\image\oppo.jpg" class="card1-img" alt="oppo.jpg">
             <h1 class="card-name">Oppo</h1>
-            <p class="desc">Oppo phones are known for their sleek design, camera innovation, and fast charging technology. </p>       
+            <p class="desc">Oppo phones are known for their sleek design, camera innovation, and fast charging technology.Realme phones have features like 5G.</p>       
             <button class="btn">Know more</button>
         </div>
         <div class="card1">
