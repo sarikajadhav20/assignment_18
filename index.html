@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 18</title>
     <style>
+        .body{
+            margin:0;
+            padding:0;
+        }
         .container{
             display:flex;
             flex-wrap:wrap;
@@ -40,6 +44,18 @@
         border-radius:40px;
         border:none;
         background-color: rgb(124, 124, 245);
+       }
+       .navbar{
+        background-color: rgb(155, 155, 249);
+        width:100%;
+        color:white;
+        padding:10px;
+        position:fixed;
+        text-align: left;
+        z-index:100;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
        }
        /* Mobile */
        @media (max-width:600px) {
@@ -106,7 +122,9 @@
 </head>
 <body>
     <div class="navbar">
-
+         <div>Brand</div>
+         <div>Menus</div>
+         <div>Search</div>
     </div>
     <h1>Smartphones</h1>
     <div class="container">
