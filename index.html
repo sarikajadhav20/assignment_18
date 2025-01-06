@@ -50,7 +50,6 @@
         width:100%;
         color:white;
         padding:10px;
-        position:fixed;
         text-align: left;
         z-index:100;
         display:flex;
@@ -80,30 +79,42 @@
        .search{
         margin-left:100px;
        }
+       .search-box{
+        padding:5px 20px;
+        border-radius:25px;
+        border:none;
+       }
+       .hamb{
+        height:40px;
+        display:none;
+       }
        /* Mobile */
        @media (max-width:600px) {
-            .card-name{
+        .search-box{
+            display: none;
+        }
+        .card-name{
                 text-align: left;
                 padding-left:18px;
                 font-size:23px;
                 margin: 5px 0;
-            }
-            .card1{
-                width:400px;
+        }
+        .card1{
+                width:250px;
                 height:400px;
-            }
-            .btn{
+        }
+        .btn{
                 font-size:20px;
                 padding: 5px 30px;
-            }
-            .desc{
+         }
+        .desc{
                 font-size:20px;
                 font-size:16px;
-            }
-            .menu{
+         }
+        .menu{
             display:none;
         }
-        .menu-icon{
+        .hamb{
              display:block;
             margin-left:auto;
             margin-right:50px;
@@ -111,6 +122,9 @@
     }
     /* Tablet */
     @media (min-width:601px) and (max-width:800px) {
+        .search-box{
+            display: none;
+        }
         .card1{
             width: 300px;
             height: 410px;
@@ -137,6 +151,9 @@
     }
     /* Laptop */
 @media (min-width:801px) and (max-width:1200px) {
+    .search-box{
+            display: none;
+     }
    .menu{
     margin-left: 400px;
   }
@@ -150,13 +167,14 @@
             <h2>Smartphones</h2>
          </div>
          <div class="menu">
-            <a href="" class="menu-item">Home</a>
-            <a href="" class="menu-item">About</a>
-            <a href="" class="menu-item">Contact</a>
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">About</a>
+            <a href="#" class="menu-item">Contact</a>
          </div>
          <div class="search">
             <input type="text" placeholder="search" class="search-box">
          </div>
+         <img src="C:\Users\Sarikaj\Desktop\assignment_18\image\ham.png" class="hamb">
     </div>
     <h1>Smartphones</h1>
     <div class="container">
